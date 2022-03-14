@@ -1,0 +1,289 @@
+:root {
+    --textcolor: #38282a;
+    --primary: #ffabb4;
+    --background: #bdbdbd;
+    --notification: #45ad50;
+}
+
+h1 {
+    color: var(--textcolor);
+}
+
+.opposite {
+    color: var(--background);
+}
+
+h2 {
+    color: var(--textcolor);
+}
+
+h3 {
+    color: var(--textcolor);
+}
+
+h4 {
+    color: var(--textcolor);
+}
+
+h5 {
+    color: var(--textcolor);
+}
+
+h6 {
+    color: var(--textcolor);
+}
+
+p {
+    color: var(--textcolor);
+}
+
+.body {
+    background-color: var(--background); 
+}
+
+#htmlbody {
+    background-color: rgb(231, 231, 231, 0.2);
+}
+
+.valveselector {
+    color:var(--primary);
+    transition: .5s;
+}
+
+.valveselector:hover {
+    color:var(--textcolor);
+}
+
+/* Header stuff */
+.recon {
+    color: var(--textcolor);
+}
+
+.profile_btn {
+    padding: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    color:var(--textcolor);
+    background-color: var(--background);
+}
+  
+.profile_btn:hover {
+    color:var(--textcolor);
+    text-decoration: none;
+    background-color: var(--primary);
+}
+
+.profileIMPORTANT_btn {
+    font-family: Poppins;
+    padding: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: var(--textcolor);
+    background-color: var(--notification);
+    border: none;
+}
+  
+.profileIMPORTANT_btn:hover {
+    color:var(--textcolor);
+    text-decoration: none;
+    background-color: var(--primary);
+}
+
+.square_btn {
+    display: inline-block;
+    font-family: Poppins;
+    padding: 5px;
+	padding-left: 35px;
+	padding-right: 35px;
+    border-radius: 25px;
+    text-decoration: none;
+    color:var(--textcolor);
+    background-color: var(--primary);
+    border: hidden;
+}
+  
+.square_btn:hover {
+    color:var(--primary);
+    text-decoration: none;
+    background-color: var(--textcolor);
+}
+
+.square2_btn{
+    display: inline-block;
+	font-family: Poppins;
+    padding: 5px;
+	padding-left: 35px;
+	padding-right: 35px;
+	border-radius: 25px;
+    text-decoration: none;
+    color:var(--textcolor);
+	background-color: var(--background);
+    border: hidden;
+}
+
+.square2_btn:hover {
+    color:var(--primary);
+    text-decoration: none;
+    background-color: var(--textcolor);
+	filter: grayscale(0%);
+}
+
+.square3_btn{
+    display: inline-block;
+    font-family: Poppins;
+    padding: 5px;
+	padding-left: 60px;
+	padding-right: 60px;
+	border-radius: 25px;
+    text-decoration: none;
+    color:var(--textcolor);
+	background-color: var(--background);
+}
+
+.square3_btn:hover {
+    color:var(--background);
+    text-decoration: none;
+    background-color: var(--textcolor);
+}
+
+.dropdown-headerfix {
+    background-color: var(--background);
+    border-radius: 7px;
+    position: absolute;
+    color: var(--textcolor);
+}
+  
+.square5_btn{
+    display: block;
+    font-family: Poppins;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color:var(--textcolor);
+    background-color: var(--background);
+}
+
+.square5_btn:hover {
+    color: var(--textcolor);
+    text-decoration: none;
+    background-color: var(--primary);
+}
+
+/* FRIENDS SYSTEM - FRIENDS BUTTONS */
+
+.friends { /* SUPER NECESARIO (Friends panel) */
+    background-color: var(--primary);
+    background-color: rgb(189, 189, 189, .75);
+    color: var(--textcolor);
+    backdrop-filter: blur(10px);
+}
+  
+.friendsModal { /* SUPER NECESARIO (Friends panel) */
+    background-color: var(--primary);
+    color: var(--textcolor);
+}
+  
+.friends-div {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background);
+    height: 125px;
+    width: 125px;
+    border-radius: 15px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    color: var(--textcolor);
+    border: 3px solid transparent;
+    text-align: center;
+}
+  
+.friends-div:hover {
+    color: var(--textcolor);
+    transition: .2s;
+    position: relative;
+    z-index: 1;
+    border: 3px solid;
+}
+  
+.avatarfriend { /* Uso solo para previews */
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+  
+  /* END OF FRIENDS SYSTEM - FRIENDS BUTTONS */
+
+.modebtn:hover .modebtn2 {
+    color: var(--textcolor);
+    -webkit-box-shadow: 1px 1px 12px 6px var(--primary);
+    -moz-box-shadow: 1px 1px 12px 6px var(--primary);
+    box-shadow: 1px 1px 12px 6px var(--primary);
+}
+
+.activeserver:hover .modebtn2 {
+    color: var(--textcolor);
+    -webkit-box-shadow: 1px 1px 12px 6px var(--primary);
+    -moz-box-shadow: 1px 1px 12px 6px var(--primary);
+    box-shadow: 1px 1px 12px 6px var(--primary);
+}
+
+.mapselectorbody {
+    background-color: rgb(18, 9, 5, .75);
+}
+
+.gamebutton {
+    color:var(--textcolor);
+	background-color: var(--primary);
+}
+
+.gamebutton:hover {
+    color: var(--primary);
+	background-color: var(--textcolor);
+}
+
+.gamebuttoncancel {
+    color:var(--textcolor);
+	background-color: var(--background);
+}
+
+.gamebuttoncancel:hover {
+    filter: grayscale(0);
+    color: var(--primary);
+	background-color: var(--textcolor);
+}
+
+.moretext {
+    color: var(--textcolor);
+}
+
+.moretext:hover {
+    color: var(--textcolor);
+}
+
+/* Modals */
+
+.modal-content {
+    background-color: rgba(255, 130, 67, 0.4);
+    backdrop-filter: blur(10px);
+}
+
+.modal-content p {
+    color: var(--textcolor);
+}
+
+.modal-footer {
+    background-color: rgb(18, 9, 5, .55);
+    backdrop-filter: blur(10px);
+}
+
+.after-tiles {
+    background-color: rgb(231, 231, 231, 0.6);
+}
