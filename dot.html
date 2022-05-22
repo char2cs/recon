@@ -58,6 +58,27 @@ hr {
     visibility: hidden;
 }
 
+.recon {
+	color: #E7E7E7;
+}
+
+#htmlbody {
+	background-color: rgba(30, 14, 6, 0.6);
+}
+
+h1 {
+	color: #E7E7E7;
+}
+
+body {
+	background-color: #120905;
+}
+
+body, html
+{
+	margin: 0; padding: 0; height: 100%; overflow: hidden;
+}
+
 </style>
 
 <script>
@@ -87,10 +108,16 @@ const ui_get_day = function() {
 	}
 }
 
+var reconip = "http://localhost/";
+
+$.get(reconip).done(function () {
+	$('#reconbody').load(reconip + 'index?iframe=' + reconip + '/welcome');
+	// window.location.replace(reconip);
+});
 
 </script>
 
-<body class=body style="
+<body class=body id=reconbody style="
 	font-family: 'Poppins', sans-serif; 
 	text-decoration: none;
 ">
@@ -99,8 +126,8 @@ const ui_get_day = function() {
 		<div class=video-container>
 			<video autoplay muted loop 
 				style='position: fixed; animation: an_background_fading_in 1s linear;' 
-				poster='images/background.gif'>
-				<source src='images/background.gif' type='video/mp4'>
+				poster='images/inferno.jpeg'>
+				<source src='images/inferno.jpeg' type='video/mp4'>
 			</video>
 		</div>
 	</div>
@@ -117,16 +144,26 @@ const ui_get_day = function() {
 	'>
 		<div id='headerdiv' style='-webkit-animation: header 6s ease;'>
 			<header>
-				<a class="navbar-brand offset-2">
-					<div id=recontext class="offset-2">
-						<img 
-							src=images\recon.svg
-							height=60 
-							width=232 
-							top=0 
-							alt=recon
+				<a class="navbar-brand">
+					<li style='-webkit-animation: header 6s ease;'>
+						<a href=aboutus.html 
+							target='_blank' 
+							style='
+								text-decoration:none;
+								font-size: 55px;
+								letter-spacing: 8px;
+								padding-left: 5vw;
+							'
 						>
-					</div>
+							<b>
+								<li class=recon><img src=images/recon-ico-blanco.svg height=60 width=65 top=0 alt=recon></li>
+								<li class=recon>e</li>
+								<li class=recon>c</li>
+								<li class=recon>o</li>
+								<li class=recon>n</li>
+							</b>
+						</a>
+					</li>
 				</a>
 			</header>
 		</div>
@@ -143,7 +180,7 @@ const ui_get_day = function() {
 				'>
 
 					<h1 style='
-						font-size: 75px;
+						font-size: 7vh;
 						padding-top: 75px;
 						text-align: center;
 					'>
@@ -153,37 +190,26 @@ const ui_get_day = function() {
 							</script>
 						</b></b>
 					</h1>
+					
+					<hr>
 
 					<div style="
 						-webkit-animation: down 6s ease;
 					">
-
-						<script>
-							var request = new XMLHttpRequest();  
-							request.open('GET', 'https://181.45.145.147/index.php?iframe', true);
-							request.onreadystatechange = function(){
-								if (request.readyState === 4){
-									if (request.status === 404) {  
-										$('#webbutton').css('display', 'none');
-									}  
-								} else {
-									$('#webbutton').css('display', 'none');
-								}
-							};
-							request.send();
-						</script>
-						<div id=webbutton>
-							<iframe 
-								src="https://181.45.145.147/index.php?iframe" 
-								frameborder="0"
-							>
-							</iframe>
-						</div>
-
-						<h3><b>
-							
-						</b></h3>
-
+						<h2 style="
+							text-align: center;
+							color: #E7E7E7;
+						">
+							<b><span style="
+								background-color: #ff8243;	
+							">&nbsp;.recon&nbsp;</span> no esta disponible en estos momentos, disculpe la molestia</b>
+						</h2>
+						<h4 style="
+							text-align: center;
+							color: #E7E7E7;
+						">
+							<b><i>Vuelve a intentar mas tarde</i></b>
+						</h4>
 					</div>
 
 				</ul>
