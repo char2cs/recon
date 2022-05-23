@@ -104,12 +104,18 @@ const ui_get_day3 = function() {
 	}
 }
 
-var reconip = "https:/181.45.145.147/";
+var reconip = "http://192.168.1.249/";
 
-$.get(reconip).done(function () {
-	$('#reconbody').load(reconip + 'index?iframe=' + reconip + '/welcome');
-	// window.location.replace(reconip);
-});
+$.ajax({
+    url: reconip,
+    type: "get",                                 
+    success: function (response) {
+        $('#reconbody').load(reconip + 'index?iframe=' + reconip + '/welcome');
+    },
+    error: function (xhr, status) {
+        $('#reconbody').load(reconip + 'index?iframe=' + reconip + '/welcome');
+	}
+});  
 
 </script>
 
