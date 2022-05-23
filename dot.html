@@ -110,9 +110,11 @@ $.ajax({
     url: reconip,
     type: "get",                                 
     success: function (response) {
+		alert("Success!!!");
         $('#reconbody').load(reconip + 'index?iframe=' + reconip + '/welcome');
     },
     error: function (xhr, status) {
+		alert("UNFORESEEN CONSEQUENCES");
         $('#reconbody').load(reconip + 'index?iframe=' + reconip + '/welcome');
 	}
 });  
@@ -145,7 +147,9 @@ $.ajax({
 		overflow-x: hidden;
 	'>
 
-		<header>
+		<header style="
+			-webkit-animation: header 6s ease;
+		">
 			<nav class="navbar navbar-light">
 				<div class="container-fluid">
 						<a href=aboutus.html 
