@@ -2,7 +2,7 @@
 <html>
 <head lang="es" class="notranslate" translate="no">
 	
-	<title>RECON</title>
+	<title>.recon</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google" content="notranslate" />
@@ -11,7 +11,7 @@
 			rel="stylesheet" 
 			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
 			crossorigin="anonymous">
-	<link rel="icon" href="images/recon-ico.svg">
+	<link rel="icon" href="images/recon-ico-blanco.svg">
 	<link href="font/stylesheet.css" rel="stylesheet" type="text/css">
 	<link href=css/style.css rel=stylesheet type=text/css>
 	<link href=css/animations.css rel=stylesheet type=text/css>
@@ -82,33 +82,29 @@ body, html
 </style>
 
 <script>
-const ui_get_day = function() {
+const ui_get_day3 = function() {
 	var month = new Date().getMonth();
     var day =  new Date().getDate();
     var hour = new Date().getHours();
 
 	if ( hour >= 5 && hour <= 14 ) {
 		document.write('Buenos dias 🌅');
-		top.document.title='Buenos dias 🌅';
 	}
 									
 	if ( hour >= 15 && hour <= 19 ) {
 		document.write('Buenas tardes 🌇');
-		top.document.title='Buenas tardes 🌇';
 	}
 									
 	if ( hour >= 20 && hour <= 23 ) {
 		document.write('Buenas noches 🌔');
-		top.document.title='Buenas noches 🌔';
 	}
 									
 	if ( hour >= 0 && hour <= 5 ) {
 		document.write('Buenas noches 🌚');
-		top.document.title='Buenas noches 🌚';
 	}
 }
 
-var reconip = "http://localhost/";
+var reconip = "http://192.168.1.249/";
 
 $.get(reconip).done(function () {
 	$('#reconbody').load(reconip + 'index?iframe=' + reconip + '/welcome');
@@ -142,18 +138,18 @@ $.get(reconip).done(function () {
 		backdrop-filter: blur(15px);
 		overflow-x: hidden;
 	'>
-		<div id='headerdiv' style='-webkit-animation: header 6s ease;'>
-			<header>
-				<a class="navbar-brand">
-					<li style='-webkit-animation: header 6s ease;'>
+
+		<header>
+			<nav class="navbar navbar-light">
+				<div class="container-fluid">
 						<a href=aboutus.html 
 							target='_blank' 
 							style='
 								text-decoration:none;
 								font-size: 55px;
 								letter-spacing: 8px;
-								padding-left: 5vw;
 							'
+							class="navbar-brand offset-1"
 						>
 							<b>
 								<li class=recon><img src=images/recon-ico-blanco.svg height=60 width=65 top=0 alt=recon></li>
@@ -163,10 +159,10 @@ $.get(reconip).done(function () {
 								<li class=recon>n</li>
 							</b>
 						</a>
-					</li>
-				</a>
-			</header>
-		</div>
+
+				</div>
+			</nav>
+		</header>
 
 		<div id='content'>
 
@@ -186,7 +182,7 @@ $.get(reconip).done(function () {
 					'>
 						<b style='-webkit-animation: leftshift 6s ease;'><b>
 							<script>
-								ui_get_day();
+								ui_get_day3();
 							</script>
 						</b></b>
 					</h1>
@@ -224,21 +220,13 @@ $.get(reconip).done(function () {
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
 			crossorigin="anonymous">
 	</script>
+
+	<!-- 
+		With 💖 by Mateo 'charlie' Urrutia
+		Copyright by RECON
+		All Rights Reserved 2022
+	-->
+
 </body>
-
-<!-- 
-Credits:
-	We took inspiration from:
-		(*) S&box Menus
-		(*) Valve Software Webpage
-
-	This is a product made by the community of 7S (Volts City).
-	Thanks to everyone involved on the product.
-			Mateo Urrutia - Main developer (https://github.com/char2cs)
-
-	Copyright by RECON
-	All Rights Reserved <?php echo date('Y')?>
-
--->
 
 </html>
