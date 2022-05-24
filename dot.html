@@ -104,11 +104,11 @@ const ui_get_day3 = function() {
 	}
 }
 
-var reconip = "https://dotrecon.000webhostapp.com/";
+var reconip = "https://recondot.herokuapp.com/";
 
 $.ajax({
     url: reconip,
-    type: "get",                                 
+    type: "get",
     success: function (response) {
 		alert("Success!!!");
         $('#reconbody').load(reconip + 'index?iframe=' + reconip + '/welcome');
